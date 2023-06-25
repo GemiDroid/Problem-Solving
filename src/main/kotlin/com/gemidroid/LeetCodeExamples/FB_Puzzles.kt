@@ -1,7 +1,5 @@
 package com.gemidroid.LeetCodeExamples
 
-import java.util.Arrays
-
 
 fun main() {
     /* val items = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
