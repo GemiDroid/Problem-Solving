@@ -13,7 +13,11 @@ repositories {
 }
 
 dependencies {
+    val kotlin_coroutines = "1.5.0"
     testImplementation(kotlin("test"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines")
+
 }
 
 tasks.test {
