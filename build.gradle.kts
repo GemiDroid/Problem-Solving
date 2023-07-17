@@ -17,6 +17,7 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines")
+    implementation("com.google.code.gson:gson:2.10.1")
 
 }
 
