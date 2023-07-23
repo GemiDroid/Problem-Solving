@@ -1,4 +1,4 @@
-package com.gemidroid.LeetCodeExamples
+package com.gemidroid.problem_solving.facebook_puzzels
 
 
 fun main() {

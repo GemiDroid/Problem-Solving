@@ -1,6 +1,5 @@
-fun main(){
-    println(findClosestElements(intArrayOf(1,2,3,9,11), 4, 3))
-}
+package com.gemidroid.problem_solving.codility
+
 fun findClosestElements(arr: IntArray, k: Int, x: Int): List<Int> {
     val sortedList = arr.sorted().toList()
     if (arr.size == 1) return arr.toList()
@@ -8,9 +7,9 @@ fun findClosestElements(arr: IntArray, k: Int, x: Int): List<Int> {
         val matchedItem = sortedList.find { it == k } ?: return emptyList()
         val indexedKeyItem = sortedList.indexOf(matchedItem)
         val indexedXItem = sortedList.indexOf(x)
-        arr.forEach{ _ ->
-            if(indexedKeyItem - indexedXItem == 1)
-                return  sortedList.subList(0, sortedList[x])
+        arr.forEach { _ ->
+            if (indexedKeyItem - indexedXItem == 1)
+                return sortedList.subList(0, sortedList[x])
 
         }
     }
