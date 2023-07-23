@@ -48,13 +48,6 @@ fun getHitProbability(R: Int, C: Int, G: Array<IntArray>): Double {
     return counter/(R*C).toDouble()
 }
 
-//#Puzzle4
-/*Todo("To be solved later...Level1 :)")*/
-fun getMaxAdditionalDinersCount(N: Long, K: Long, M: Int, S: Array<Long>): Long {
-    // Write your code here
-    return 0
-}
-
 //____________________________________-----------------------_________________________//
 
 
@@ -69,16 +62,6 @@ fun getData(k: Int, items: IntArray) {
             tempItems.add(items[i])
         } else index++
     }
-
-    /*for (i in items.indices) {
-        for (j in 1 until items.size - 1) {
-            if (items[i] + items[j] == k) {
-                tempItems.add(items[i])
-                tempItems.add(items[j])
-            }
-        }
-    }*/
-
     print(tempItems.joinToString(","))// 1,5, 3,4
 }
 
