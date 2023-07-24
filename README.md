@@ -22,6 +22,7 @@
 - Two Sum.
 - Unique NumbersOfOccurrence.
 - Valid Parentheses.
+- invert Binary Tree
 
 <h4>
 <a href="https://www.codility.com/">Codility</a>
