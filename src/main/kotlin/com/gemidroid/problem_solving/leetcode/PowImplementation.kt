@@ -4,16 +4,14 @@ package com.gemidroid.problem_solving.leetcode
  ** Todo("Still 1 TC remaining, to be continued....")
  */
 fun myPow(x: Double, n: Int): Double {
-    val sum = 0.0
+    var sum = 0.0
     if (n == 0) return 1.0 // special case if n == 0
     if (n == 1) return x
     if (n >= recurPow(2.0, 31) - 1 || n <= (recurPow(2.0, 31) - 1) * -1)
         return if (x < 0 && n < 0) -x
         else if (n > 0 && x < 0 || x == 1.0) x
-        else if (x.toString().startsWith(".0") && x > 1) 1 / x
-        else if(x.toString().startsWith("1.")) 1/x
-        else if (x == 1.0 || (x > 1 && x.toString().contains("."))) 0.0
-        else if (n < 0) (1.0 / x)
+        else if(x == 1.0 || (x > 1 && x.toString().contains("."))) 0.0
+        else if (n < 0 ) (1.0 / x)
         else 0.0
     val multi = recurPow(x, n)
     if (n < 0) {
@@ -25,8 +23,9 @@ fun myPow(x: Double, n: Int): Double {
             return 0.0
         return recurPow(xi, ni)
     }
+    sum += multi
 
-    return sum+multi
+    return sum
 }
 
 private fun recurPow(x: Double, n: Int): Double {
